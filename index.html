@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كوبوناتك | أكواد خصم SHEIN و Temu</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#fff7fc;
+  color:#29202d;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#ff4fa3,#8d5cff);
+  color:white;
+  padding:28px 18px 65px;
+  text-align:center;
+  border-radius:0 0 35px 35px;
+}
+
+.logo{
+  font-size:30px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:16px;
+  opacity:.95;
+}
+
+/* SEARCH */
+.search-box{
+  max-width:650px;
+  margin:-30px auto 30px;
+  padding:0 18px;
+}
+
+.search{
+  width:100%;
+  padding:18px 22px;
+  border:0;
+  border-radius:18px;
+  background:white;
+  box-shadow:0 8px 30px rgba(100,50,100,.12);
+  font-size:16px;
+  outline:none;
+}
+
+/* MAIN */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:0 18px 50px;
+}
+
+.section-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:35px 0 18px;
+}
+
+.section-title h2{
+  font-size:24px;
+}
+
+.badge{
+  background:#ffe0ef;
+  color:#e82f83;
+  padding:7px 13px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+/* COUPON */
+.coupon{
+  background:white;
+  border-radius:22px;
+  padding:20px;
+  margin-bottom:16px;
+  box-shadow:0 7px 25px rgba(100,50,100,.08);
+  display:flex;
+  align-items:center;
+  gap:18px;
+  border:1px solid #f8e7f1;
+}
+
+.store-logo{
+  width:65px;
+  height:65px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  color:white;
+  font-size:14px;
+  flex-shrink:0;
+}
+
+.shein{
+  background:#111;
+}
+
+.temu{
+  background:linear-gradient(135deg,#ff5b35,#ff9a21);
+}
+
+.coupon-info{
+  flex:1;
+}
+
+.coupon-info h3{
+  font-size:18px;
+  margin-bottom:7px;
+}
+
+.coupon-info p{
+  color:#777;
+  font-size:14px;
+  line-height:1.6;
+}
+
+.code{
+  display:inline-block;
+  margin-top:9px;
+  background:#f7f1ff;
+  color:#7a42d8;
+  padding:7px 12px;
+  border-radius:9px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.copy-btn{
+  border:0;
+  background:linear-gradient(135deg,#ff4fa3,#9b5cff);
+  color:white;
+  padding:13px 19px;
+  border-radius:13px;
+  font-weight:bold;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.copy-btn:active{
+  transform:scale(.96);
+}
+
+/* INFO */
+.info{
+  background:linear-gradient(135deg,#fff0f8,#f1ebff);
+  border-radius:22px;
+  padding:25px;
+  margin-top:35px;
+}
+
+.info h2{
+  margin-bottom:12px;
+}
+
+.info p{
+  line-height:1.9;
+  color:#5f5362;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px 15px;
+  color:#8a7d88;
+  font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:650px){
+
+  .logo{
+    font-size:26px;
+  }
+
+  .coupon{
+    align-items:flex-start;
+  }
+
+  .coupon{
+    flex-wrap:wrap;
+  }
+
+  .coupon-info{
+    min-width:calc(100% - 85px);
+  }
+
+  .copy-btn{
+    width:100%;
+  }
+
+  .section-title h2{
+    font-size:21px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🎀 كوبوناتك</div>
+  <p>أحدث أكواد الخصم والعروض في مكان واحد</p>
+</header>
+
+<div class="search-box">
+  <input
+    class="search"
+    id="search"
+    type="text"
+    placeholder="🔎 ابحثي عن متجر أو كود خصم..."
+    onkeyup="searchCoupons()"
+  >
+</div>
+
+<main class="container">
+
+  <!-- SHEIN -->
+  <div class="section-title">
+    <h2>🛍️ كوبونات SHEIN</h2>
+    <span class="badge">أكواد خصم</span>
+  </div>
+
+  <div class="coupon">
+    <div class="store-logo shein">SHEIN</div>
+
+    <div class="coupon-info">
+      <h3>كود خصم شي إن</h3>
+      <p>استخدمي الكود عند إتمام الطلب للحصول على الخصم.</p>
+      <span class="code">SHEIN10</span>
+    </div>
+
+    <button class="copy-btn" onclick="copyCode('SHEIN10',this)">
+      نسخ الكود
+    </button>
+  </div>
+
+  <div class="coupon">
+    <div class="store-logo shein">SHEIN</div>
+
+    <div class="coupon-info">
+      <h3>خصم إضافي على الطلب</h3>
+      <p>جربي هذا الكود عند الدفع لمعرفة الخصم المتاح.</p>
+      <span class="code">SAVE15</span>
+    </div>
+
+    <button class="copy-btn" onclick="copyCode('SAVE15',this)">
+      نسخ الكود
+    </button>
+  </div>
+
+
+  <!-- TEMU -->
+  <div class="section-title">
+    <h2>🛒 كوبونات Temu</h2>
+    <span class="badge">أكواد خصم</span>
+  </div>
+
+  <div class="coupon">
+    <div class="store-logo temu">TEMU</div>
+
+    <div class="coupon-info">
+      <h3>كود خصم تيمو</h3>
+      <p>انسخي الكود وجربيه عند إتمام عملية الشراء.</p>
+      <span class="code">TEMU10</span>
+    </div>
+
+    <button class="copy-btn" onclick="copyCode('TEMU10',this)">
+      نسخ الكود
+    </button>
+  </div>
+
+  <div class="coupon">
+    <div class="store-logo temu">TEMU</div>
+
+    <div class="coupon-info">
+      <h3>خصم على الطلب</h3>
+      <p>استخدمي الكود لمعرفة العرض المتاح لحسابك.</p>
+      <span class="code">WELCOME</span>
+    </div>
+
+    <button class="copy-btn" onclick="copyCode('WELCOME',this)">
+      نسخ الكود
+    </button>
+  </div>
+
+
+  <div class="info">
+    <h2>✨ كيف تستخدمين كوبوناتنا؟</h2>
+    <p>
+      اختاري المتجر، ثم اضغطي على «نسخ الكود».
+      بعد ذلك انتقلي إلى المتجر وأضيفي المنتجات إلى سلة التسوق،
+      ثم ضعي الكود في خانة الخصم عند الدفع.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 كوبوناتك — جميع الحقوق محفوظة
+</footer>
+
+
+<script>
+
+function copyCode(code,button){
+
+  navigator.clipboard.writeText(code);
+
+  const oldText = button.innerText;
+
+  button.innerText = "✓ تم النسخ";
+
+  setTimeout(function(){
+    button.innerText = oldText;
+  },1800);
+}
+
+
+function searchCoupons(){
+
+  const search =
+    document.getElementById("search").value.toLowerCase();
+
+  const coupons =
+    document.querySelectorAll(".coupon");
+
+  coupons.forEach(function(coupon){
+
+    const text =
+      coupon.innerText.toLowerCase();
+
+    if(text.includes(search)){
+      coupon.style.display="flex";
+    }else{
+      coupon.style.display="none";
+    }
+
+  });
+}
+
+</script>
+
+</body>
+</html>
